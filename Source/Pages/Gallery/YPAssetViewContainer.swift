@@ -104,9 +104,7 @@ class YPAssetViewContainer: UIView {
                 squareCropButton.isHidden = isImageASquare
             }
         }
-        
-        let shouldFit = YPConfig.library.onlySquare ? true : shouldCropToSquare
-        zoomableView?.fitImage(shouldFit)
+        zoomableView?.fitImage(onlySquare)
     }
     
     // MARK: - Multiple selection
