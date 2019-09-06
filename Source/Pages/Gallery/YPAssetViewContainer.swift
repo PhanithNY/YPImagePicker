@@ -138,7 +138,7 @@ extension YPAssetViewContainer: YPAssetZoomableViewDelegate {
     public func ypAssetZoomableViewScrollViewDidZoom() {
         if isShown {
             UIView.animate(withDuration: 0.1) {
-                self.grid.alpha = 1
+                self.grid.alpha = 0
             }
         }
     }
@@ -167,7 +167,7 @@ extension YPAssetViewContainer: UIGestureRecognizerDelegate {
         case .began:
             if isShown {
                 UIView.animate(withDuration: 0.1) {
-                    self.grid.alpha = 1
+                    self.grid.alpha = 0
                 }
             }
         case .ended:
